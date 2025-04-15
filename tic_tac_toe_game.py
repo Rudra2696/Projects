@@ -23,4 +23,12 @@ while True:
     except(ValueError,SyntaxError,TypeError):
         print("Invalid Input")
         
-                
+try:
+    a=input("What is your choice : ")
+except(ValueError,SyntaxError,TypeError):
+        print("Something went wrong!!")               
+
+try:
+    b=input("Enter name of 2nd player : ")
+except(ValueError,SyntaxError,TypeError):
+        print("Something went wrong!!")
