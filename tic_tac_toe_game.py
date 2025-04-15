@@ -13,15 +13,6 @@ print("""
 
 """)
 
-while True:
-    try:
-        n=int(input("What is your choice : "))
-        if (n==1 or n==2):
-            break
-        else:
-            print("Enter 1/2 only")
-    except(ValueError,SyntaxError,TypeError):
-        print("Invalid Input")
         
 try:
     a=input("What is your choice : ")
@@ -32,3 +23,13 @@ try:
     b=input("Enter name of 2nd player : ")
 except(ValueError,SyntaxError,TypeError):
         print("Something went wrong!!")
+
+while True:
+    try:
+        n=int(input("What is your choice : "))
+        if (n==1 or n==2):
+            break
+        else:
+            print("Enter 1/2 only")
+    except(ValueError,SyntaxError,TypeError):
+        print("Invalid Input")
