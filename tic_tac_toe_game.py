@@ -1,7 +1,7 @@
 print("Welcome to tic tac toe game")
 
 try:
-    a=input("What is your choice : ")
+    a=input("Enter name of 1st player : ")
 except(ValueError,SyntaxError,TypeError):
         print("Something went wrong!!")               
 
