@@ -2,11 +2,13 @@ print("Welcome to tic tac toe game")
 
 try:
     a=input("Enter name of 1st player : ")
+    a=a.capitalize().strip()
 except(ValueError,SyntaxError,TypeError):
         print("Something went wrong!!")               
 
 try:
     b=input("Enter name of 2nd player : ")
+    b=b.capitalize().strip()
 except(ValueError,SyntaxError,TypeError):
         print("Something went wrong!!")
 
