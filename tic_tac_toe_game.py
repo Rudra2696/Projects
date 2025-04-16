@@ -12,7 +12,6 @@ try:
 except(ValueError,SyntaxError,TypeError):
         print("Something went wrong!!")
 
-print(f"For O Enter 1\n For X Enter 2")
 
 print("""
 
@@ -25,11 +24,11 @@ print("""
 
 """)
 
-        
+print(f"For O Enter 1\n For X Enter 2")
 
 while True:
     try:
-        n=int(input(f"What is choice of {a} for place of 1: "))
+        n=int(input(f"What is your choice {a} for the game (1/2): "))     
         if (n==1 or n==2):
             break
         else:
@@ -37,18 +36,15 @@ while True:
     except(ValueError,SyntaxError,TypeError):
         print("Invalid Input")
 
+
 if n==1:
-    o="O"
+    z="O" 
+    y="X"
 else:
-    o="X"
+    z="X" 
+    y="O"
 
-print(f"""
-
-{o} | 2 | 3
-----------      
-4 | 5 | 6
-----------      
-7 | 8 | 9
+print(f"{a} you choose {z} \n {b} you choose {y}")                
 
 
-""")        
+       
