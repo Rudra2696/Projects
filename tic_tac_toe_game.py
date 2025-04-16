@@ -56,7 +56,7 @@ p="""
 
 
 """
-
+l=[1,2,3,4,5,6,7,8,9]
 
 while True:
     try:
@@ -71,3 +71,15 @@ while True:
 p=p.replace(str(n1),f"{z}")        
 
 print(p)
+
+l.remove(n1)
+
+while True:
+    try:
+        n2=int(input(f"where do you want to place your choice {b} : "))     
+        if n2 in l:
+            break
+        else:
+            print(f"Enter{l} only")
+    except(ValueError,SyntaxError,TypeError):
+        print("Invalid Input")  
