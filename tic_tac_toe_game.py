@@ -44,7 +44,30 @@ else:
     z="X" 
     y="O"
 
-print(f"{a} you choose {z} \n {b} you choose {y}")                
+print(f"{a} you choose {z} \n {b} you choose {y}")    
+
+p="""
+
+1 | 2 | 3
+----------      
+4 | 5 | 6
+----------      
+7 | 8 | 9
 
 
-       
+"""
+
+
+while True:
+    try:
+        n1=int(input(f"where do you want to place your choice {a} : "))     
+        if (n1==1 or n1==2 or n1==3 or n1==4 or n1==5 or n1==6 or n1==7 or n1==8 or n1==9 ):
+            break
+        else:
+            print("Enter 1/2/3/4/5/6/7/8/9 only")
+    except(ValueError,SyntaxError,TypeError):
+        print("Invalid Input")   
+
+p=p.replace(str(n1),f"{z}")        
+
+print(p)
