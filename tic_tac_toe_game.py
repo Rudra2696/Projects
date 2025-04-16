@@ -29,10 +29,26 @@ print("""
 
 while True:
     try:
-        n=int(input("What is your choice : "))
+        n=int(input(f"What is choice of {a} for place of 1: "))
         if (n==1 or n==2):
             break
         else:
             print("Enter 1/2 only")
     except(ValueError,SyntaxError,TypeError):
         print("Invalid Input")
+
+if n==1:
+    o="O"
+else:
+    o="X"
+
+print(f"""
+
+{o} | 2 | 3
+----------      
+4 | 5 | 6
+----------      
+7 | 8 | 9
+
+
+""")        
