@@ -56,15 +56,21 @@ p="""
 
 
 """
-l=[1,2,3,4,5,6,7,8,9]
+l=["1/","2/","3/","4/","5/","6/","7/","8/","9"]
+l1=[1,2,3,4,5,6,7,8,9]
+
+z1=""    
+
+for _ in l:
+    z1=z1+f"{_}"
 
 while True:
     try:
         n1=int(input(f"where do you want to place your choice {a} : "))     
-        if (n1==1 or n1==2 or n1==3 or n1==4 or n1==5 or n1==6 or n1==7 or n1==8 or n1==9 ):
+        if n1 in l1:
             break
         else:
-            print("Enter 1/2/3/4/5/6/7/8/9 only")
+            print(f"Enter {z1} only")
     except(ValueError,SyntaxError,TypeError):
         print("Invalid Input")   
 
@@ -72,14 +78,41 @@ p=p.replace(str(n1),f"{z}")
 
 print(p)
 
-l.remove(n1)
+if n1==9:
+   l.remove(f"{n1}")
+   l1.remove(n1)
+else:
+    l.remove(f"{n1}/")  
+    l1.remove(n1) 
+
+z2=""    
+
+for _ in l:
+    z2=z2+f"{_}"    
+
 
 while True:
     try:
         n2=int(input(f"where do you want to place your choice {b} : "))     
-        if n2 in l:
+        if n2 in l1:
             break
         else:
-            print(f"Enter{l} only")
+            print(f"Enter {z2} only")
     except(ValueError,SyntaxError,TypeError):
         print("Invalid Input")  
+
+p=p.replace(str(n2),f"{y}")        
+
+print(p)
+
+if n1==9:
+   l.remove(f"{n2}")
+   l1.remove(n2)
+else:
+    l.remove(f"{n2}/")  
+    l1.remove(n2) 
+
+z3=""    
+
+for _ in l:
+    z3=z3+f"{_}"        
