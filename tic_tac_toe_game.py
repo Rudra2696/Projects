@@ -105,7 +105,7 @@ p=p.replace(str(n2),f"{y}")
 
 print(p)
 
-if n1==9:
+if n2==9:
    l.remove(f"{n2}")
    l1.remove(n2)
 else:
@@ -116,3 +116,29 @@ z3=""
 
 for _ in l:
     z3=z3+f"{_}"        
+
+while True:
+    try:
+        n3=int(input(f"where do you want to place your choice {a} : "))     
+        if n3 in l1:
+            break
+        else:
+            print(f"Enter {z3} only")
+    except(ValueError,SyntaxError,TypeError):
+        print("Invalid Input")  
+
+p=p.replace(str(n3),f"{z}")        
+
+print(p)
+
+if n3==9:
+   l.remove(f"{n3}")
+   l1.remove(n3)
+else:
+    l.remove(f"{n3}/")  
+    l1.remove(n3) 
+
+z4=""    
+
+for _ in l:
+    z4=z4+f"{_}"    
