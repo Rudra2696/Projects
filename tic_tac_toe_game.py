@@ -244,7 +244,33 @@ else:
     l.remove(f"{n7}/")  
     l1.remove(n7) 
 
-z7=""    
+z8=""    
 
 for _ in l:
-    z7=z7+f"{_}"        
+    z8=z8+f"{_}"    
+
+while True:
+    try:
+        n8=int(input(f"where do you want to place your choice {b} : "))     
+        if n8 in l1:
+            break
+        else:
+            print(f"Enter {z8} only")
+    except(ValueError,SyntaxError,TypeError):
+        print("Invalid Input")  
+
+p=p.replace(str(n8),f"{y}")        
+
+print(p)
+
+if n8==9:
+   l.remove(f"{n8}")
+   l1.remove(n8)
+else:
+    l.remove(f"{n8}/")  
+    l1.remove(n8) 
+
+z9=""    
+
+for _ in l:
+    z9=z9+f"{_}"            
