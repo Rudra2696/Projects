@@ -221,3 +221,30 @@ z7=""
 
 for _ in l:
     z7=z7+f"{_}"    
+
+
+while True:
+    try:
+        n7=int(input(f"where do you want to place your choice {a} : "))     
+        if n7 in l1:
+            break
+        else:
+            print(f"Enter {z7} only")
+    except(ValueError,SyntaxError,TypeError):
+        print("Invalid Input")  
+
+p=p.replace(str(n7),f"{z}")        
+
+print(p)
+
+if n7==9:
+   l.remove(f"{n7}")
+   l1.remove(n7)
+else:
+    l.remove(f"{n7}/")  
+    l1.remove(n7) 
+
+z7=""    
+
+for _ in l:
+    z7=z7+f"{_}"        
