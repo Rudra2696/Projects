@@ -145,7 +145,7 @@ for _ in l:
 
 while True:
     try:
-        n4=int(input(f"where do you want to place your choice {a} : "))     
+        n4=int(input(f"where do you want to place your choice {b} : "))     
         if n4 in l1:
             break
         else:
@@ -153,7 +153,7 @@ while True:
     except(ValueError,SyntaxError,TypeError):
         print("Invalid Input")  
 
-p=p.replace(str(n4),f"{z}")        
+p=p.replace(str(n4),f"{y}")        
 
 print(p)
 
@@ -168,3 +168,30 @@ z5=""
 
 for _ in l:
     z5=z5+f"{_}"
+
+
+while True:
+    try:
+        n5=int(input(f"where do you want to place your choice {a} : "))     
+        if n5 in l1:
+            break
+        else:
+            print(f"Enter {z5} only")
+    except(ValueError,SyntaxError,TypeError):
+        print("Invalid Input")  
+
+p=p.replace(str(n5),f"{z}")        
+
+print(p)
+
+if n5==9:
+   l.remove(f"{n5}")
+   l1.remove(n5)
+else:
+    l.remove(f"{n5}/")  
+    l1.remove(n5) 
+
+z6=""    
+
+for _ in l:
+    z6=z6+f"{_}"
