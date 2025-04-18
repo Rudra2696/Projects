@@ -141,4 +141,30 @@ else:
 z4=""    
 
 for _ in l:
-    z4=z4+f"{_}"    
+    z4=z4+f"{_}"  
+
+while True:
+    try:
+        n4=int(input(f"where do you want to place your choice {a} : "))     
+        if n4 in l1:
+            break
+        else:
+            print(f"Enter {z4} only")
+    except(ValueError,SyntaxError,TypeError):
+        print("Invalid Input")  
+
+p=p.replace(str(n4),f"{z}")        
+
+print(p)
+
+if n4==9:
+   l.remove(f"{n4}")
+   l1.remove(n4)
+else:
+    l.remove(f"{n4}/")  
+    l1.remove(n4) 
+
+z5=""    
+
+for _ in l:
+    z5=z5+f"{_}"
