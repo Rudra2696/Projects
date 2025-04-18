@@ -195,3 +195,29 @@ z6=""
 
 for _ in l:
     z6=z6+f"{_}"
+
+while True:
+    try:
+        n6=int(input(f"where do you want to place your choice {b} : "))     
+        if n6 in l1:
+            break
+        else:
+            print(f"Enter {z6} only")
+    except(ValueError,SyntaxError,TypeError):
+        print("Invalid Input")  
+
+p=p.replace(str(n6),f"{y}")        
+
+print(p)
+
+if n6==9:
+   l.remove(f"{n6}")
+   l1.remove(n6)
+else:
+    l.remove(f"{n6}/")  
+    l1.remove(n6) 
+
+z7=""    
+
+for _ in l:
+    z7=z7+f"{_}"    
