@@ -108,6 +108,7 @@ while True:
     try:
         n2=int(input(f"where do you want to place your choice {b} : "))     
         if n2 in l1:
+            player2(n2,b)
             break
         else:
             print(f"Enter {z2} only")
@@ -134,6 +135,7 @@ while True:
     try:
         n3=int(input(f"where do you want to place your choice {a} : "))     
         if n3 in l1:
+            player1(n3,a)
             break
         else:
             print(f"Enter {z3} only")
@@ -160,6 +162,7 @@ while True:
     try:
         n4=int(input(f"where do you want to place your choice {b} : "))     
         if n4 in l1:
+            player2(n4,b)
             break
         else:
             print(f"Enter {z4} only")
@@ -187,6 +190,7 @@ while True:
     try:
         n5=int(input(f"where do you want to place your choice {a} : "))     
         if n5 in l1:
+            player1(n5,a)
             break
         else:
             print(f"Enter {z5} only")
@@ -213,6 +217,7 @@ while True:
     try:
         n6=int(input(f"where do you want to place your choice {b} : "))     
         if n6 in l1:
+            player2(n6,b)
             break
         else:
             print(f"Enter {z6} only")
@@ -240,6 +245,7 @@ while True:
     try:
         n7=int(input(f"where do you want to place your choice {a} : "))     
         if n7 in l1:
+            player1(n7,a)
             break
         else:
             print(f"Enter {z7} only")
@@ -266,6 +272,7 @@ while True:
     try:
         n8=int(input(f"where do you want to place your choice {b} : "))     
         if n8 in l1:
+            player2(n8,b)
             break
         else:
             print(f"Enter {z8} only")
@@ -292,6 +299,7 @@ while True:
     try:
         n9=int(input(f"where do you want to place your choice {a} : "))     
         if n9 in l1:
+            player1(n9,a)
             break
         else:
             print(f"Enter {z9} only")
@@ -300,11 +308,4 @@ while True:
 
 p=p.replace(str(n9),f"{z}")        
 
-print(p)
-
-if n8==9:
-   l.remove(f"{n9}")
-   l1.remove(n9)
-else:
-    l.remove(f"{n9}/")  
-    l1.remove(n9)               
+print(p)               
