@@ -4,7 +4,7 @@ def player1(d,a):
       if (1 and 2 and 3 in list1) or (4 and 5 and 6 in list1) or (7 and 8 and 9 in list1) or (1 and 4 and 7 in list1) or (2 and 5 and 8 in list1) or (3 and 6 and 9 in list1) or (1 and 5 and 9 in list1) or (3 and 5 and 7 in list1):
           print(f"Congrats!! {a} you won the game")
       
-def player12(d,b):
+def player2(d,b):
       list2=[]
       list2.append(d)
       if (1 and 2 and 3 in list2) or (4 and 5 and 6 in list2) or (7 and 8 and 9 in list2) or (1 and 4 and 7 in list2) or (2 and 5 and 8 in list2) or (3 and 6 and 9 in list2) or (1 and 5 and 9 in list2) or (3 and 5 and 7 in list2):
@@ -80,6 +80,7 @@ while True:
     try:
         n1=int(input(f"where do you want to place your choice {a} : "))     
         if n1 in l1:
+            player1(n1,a)
             break
         else:
             print(f"Enter {z1} only")
