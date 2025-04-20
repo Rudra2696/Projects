@@ -136,11 +136,12 @@ list1.append(n1)
 
 f1=player1(list1,a)
 
+print(p)
+
 if f1==True:
     print(f"Congratulations !!\n{a} won the game")  
     exit()
 
-print(p)
 
 if n1==9:
    l.remove(f"{n1}")
@@ -170,11 +171,12 @@ p=p.replace(str(n2),f"{y}")
 list2.append(n2)
 f2=player2(list2,b)
 
+print(p)
+
 if f2==True:
     print(f"Congratulations !!\n{b} won the game")  
     exit()
 
-print(p)
 
 if n2==9:
    l.remove(f"{n2}")
@@ -204,11 +206,12 @@ list1.append(n3)
 
 f3=player1(list1,a)
 
+print(p)
+
 if f3==True:
     print(f"Congratulations !!\n{a} won the game")  
     exit()
 
-print(p)
 
 if n3==9:
    l.remove(f"{n3}")
@@ -237,11 +240,12 @@ p=p.replace(str(n4),f"{y}")
 list2.append(n4)
 f4=player2(list2,b)
 
+print(p)
+
 if f4==True:
     print(f"Congratulations !!\n{b} won the game")  
     exit()
 
-print(p)
 
 if n4==9:
    l.remove(f"{n4}")
@@ -272,11 +276,12 @@ list1.append(n5)
 
 f5=player1(list1,a)
 
+print(p)
+
 if f5==True:
     print(f"Congratulations !!\n{a} won the game")  
     exit()
 
-print(p)
 
 if n5==9:
    l.remove(f"{n5}")
@@ -305,11 +310,12 @@ p=p.replace(str(n6),f"{y}")
 list2.append(n6)
 f6=player2(list2,b)
 
+print(p)
+
 if f6==True:
     print(f"Congratulations !!\n{b} won the game")  
     exit()
 
-print(p)
 
 if n6==9:
    l.remove(f"{n6}")
@@ -340,11 +346,12 @@ list1.append(n7)
 
 f7=player1(list1,a)
 
+print(p)
+
 if f7==True:
     print(f"Congratulations !!\n{a} won the game")  
     exit()
     
-print(p)
 
 if n7==9:
    l.remove(f"{n7}")
@@ -373,11 +380,12 @@ p=p.replace(str(n8),f"{y}")
 list2.append(n8)
 f8=player2(list2,b)
 
+print(p)
+
 if f8==True:
     print(f"Congratulations !!\n{b} won the game")  
     exit()
 
-print(p)
 
 if n8==9:
    l.remove(f"{n8}")
@@ -407,10 +415,13 @@ list1.append(n9)
 
 f9=player1(list1,a)
 
+print(p)
+
 if f9==True:
     print(f"Congratulations !!\n{a} won the game")  
     exit()
 
-print(p)  
 
-print("Game Over\n It's a Tie!!\nThank you for playing")
+print("It's a Tie!!")
+
+print("Game Over\nThank you for playing")
