@@ -399,15 +399,7 @@ z9=""
 for _ in l:
     z9=z9+f"{_}"  
 
-while True:
-    try:
-        n9=int(input(f"where do you want to place your choice {a} : "))     
-        if n9 in l1:
-            break
-        else:
-            print(f"Enter {z9} only")
-    except(ValueError,SyntaxError,TypeError):
-        print("Invalid Input")  
+n9=l1[0]  
 
 p=p.replace(str(n9),f"{z}")        
 
