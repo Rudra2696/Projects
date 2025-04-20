@@ -1,14 +1,56 @@
 def player1(d,a):
-      list1=[]
-      list1.append(d)
-      if (1 and 2 and 3 in list1) or (4 and 5 and 6 in list1) or (7 and 8 and 9 in list1) or (1 and 4 and 7 in list1) or (2 and 5 and 8 in list1) or (3 and 6 and 9 in list1) or (1 and 5 and 9 in list1) or (3 and 5 and 7 in list1):
-          print(f"Congrats!! {a} you won the game")
+    list1=d
+    w1=[1,2,3]
+    w2=[4,5,6]
+    w3=[7,8,9]
+    w4=[1,4,7]
+    w5=[2,5,8]
+    w6=[3,6,9]
+    w7=[1,5,9]
+    w8=[3,5,7]    
+    if all(num in list1 for num in w1):
+        return True
+    elif all(num in list1 for num in w2):
+        return True
+    elif all(num in list1 for num in w3):
+        return True
+    elif all(num in list1 for num in w4):
+        return True
+    elif all(num in list1 for num in w5):
+        return True
+    elif all(num in list1 for num in w6):
+        return True
+    elif all(num in list1 for num in w7):
+        return True
+    elif all(num in list1 for num in w8):
+        return True
       
 def player2(d,b):
-      list2=[]
-      list2.append(d)
-      if (1 and 2 and 3 in list2) or (4 and 5 and 6 in list2) or (7 and 8 and 9 in list2) or (1 and 4 and 7 in list2) or (2 and 5 and 8 in list2) or (3 and 6 and 9 in list2) or (1 and 5 and 9 in list2) or (3 and 5 and 7 in list2):
-          print(f"Congrats!! {b} you won the game")      
+    list2=d
+    w1=[1,2,3]
+    w2=[4,5,6]
+    w3=[7,8,9]
+    w4=[1,4,7]
+    w5=[2,5,8]
+    w6=[3,6,9]
+    w7=[1,5,9]
+    w8=[3,5,7]    
+    if all(num in list2 for num in w1):
+        return True
+    elif all(num in list2 for num in w2):
+        return True
+    elif all(num in list2 for num in w3):
+        return True
+    elif all(num in list2 for num in w4):
+        return True
+    elif all(num in list2 for num in w5):
+        return True
+    elif all(num in list2 for num in w6):
+        return True
+    elif all(num in list2 for num in w7):
+        return True
+    elif all(num in list2 for num in w8):
+        return True    
 
 print("Welcome to tic tac toe game")
 
@@ -70,6 +112,8 @@ p="""
 """
 l=["1/","2/","3/","4/","5/","6/","7/","8/","9"]
 l1=[1,2,3,4,5,6,7,8,9]
+list1=[]
+list2=[]
 
 z1=""    
 
@@ -80,14 +124,21 @@ while True:
     try:
         n1=int(input(f"where do you want to place your choice {a} : "))     
         if n1 in l1:
-            player1(n1,a)
             break
         else:
             print(f"Enter {z1} only")
     except(ValueError,SyntaxError,TypeError):
         print("Invalid Input")   
 
-p=p.replace(str(n1),f"{z}")        
+p=p.replace(str(n1),f"{z}")    
+
+list1.append(n1)
+
+f1=player1(list1,a)
+
+if f1==True:
+    print(f"Congratulations !!\n{a} won the game")  
+    exit()
 
 print(p)
 
@@ -108,7 +159,6 @@ while True:
     try:
         n2=int(input(f"where do you want to place your choice {b} : "))     
         if n2 in l1:
-            player2(n2,b)
             break
         else:
             print(f"Enter {z2} only")
@@ -116,6 +166,13 @@ while True:
         print("Invalid Input")  
 
 p=p.replace(str(n2),f"{y}")        
+
+list2.append(n2)
+f2=player2(list2,b)
+
+if f2==True:
+    print(f"Congratulations !!\n{b} won the game")  
+    exit()
 
 print(p)
 
@@ -135,7 +192,6 @@ while True:
     try:
         n3=int(input(f"where do you want to place your choice {a} : "))     
         if n3 in l1:
-            player1(n3,a)
             break
         else:
             print(f"Enter {z3} only")
@@ -143,6 +199,14 @@ while True:
         print("Invalid Input")  
 
 p=p.replace(str(n3),f"{z}")        
+
+list1.append(n3)
+
+f3=player1(list1,a)
+
+if f3==True:
+    print(f"Congratulations !!\n{a} won the game")  
+    exit()
 
 print(p)
 
@@ -162,7 +226,6 @@ while True:
     try:
         n4=int(input(f"where do you want to place your choice {b} : "))     
         if n4 in l1:
-            player2(n4,b)
             break
         else:
             print(f"Enter {z4} only")
@@ -170,6 +233,13 @@ while True:
         print("Invalid Input")  
 
 p=p.replace(str(n4),f"{y}")        
+
+list2.append(n4)
+f4=player2(list2,b)
+
+if f4==True:
+    print(f"Congratulations !!\n{b} won the game")  
+    exit()
 
 print(p)
 
@@ -190,7 +260,6 @@ while True:
     try:
         n5=int(input(f"where do you want to place your choice {a} : "))     
         if n5 in l1:
-            player1(n5,a)
             break
         else:
             print(f"Enter {z5} only")
@@ -198,6 +267,14 @@ while True:
         print("Invalid Input")  
 
 p=p.replace(str(n5),f"{z}")        
+
+list1.append(n5)
+
+f5=player1(list1,a)
+
+if f5==True:
+    print(f"Congratulations !!\n{a} won the game")  
+    exit()
 
 print(p)
 
@@ -217,7 +294,6 @@ while True:
     try:
         n6=int(input(f"where do you want to place your choice {b} : "))     
         if n6 in l1:
-            player2(n6,b)
             break
         else:
             print(f"Enter {z6} only")
@@ -225,6 +301,13 @@ while True:
         print("Invalid Input")  
 
 p=p.replace(str(n6),f"{y}")        
+
+list2.append(n6)
+f6=player2(list2,b)
+
+if f6==True:
+    print(f"Congratulations !!\n{b} won the game")  
+    exit()
 
 print(p)
 
@@ -245,7 +328,6 @@ while True:
     try:
         n7=int(input(f"where do you want to place your choice {a} : "))     
         if n7 in l1:
-            player1(n7,a)
             break
         else:
             print(f"Enter {z7} only")
@@ -254,6 +336,14 @@ while True:
 
 p=p.replace(str(n7),f"{z}")        
 
+list1.append(n7)
+
+f7=player1(list1,a)
+
+if f7==True:
+    print(f"Congratulations !!\n{a} won the game")  
+    exit()
+    
 print(p)
 
 if n7==9:
@@ -272,7 +362,6 @@ while True:
     try:
         n8=int(input(f"where do you want to place your choice {b} : "))     
         if n8 in l1:
-            player2(n8,b)
             break
         else:
             print(f"Enter {z8} only")
@@ -280,6 +369,13 @@ while True:
         print("Invalid Input")  
 
 p=p.replace(str(n8),f"{y}")        
+
+list2.append(n8)
+f8=player2(list2,b)
+
+if f8==True:
+    print(f"Congratulations !!\n{b} won the game")  
+    exit()
 
 print(p)
 
@@ -299,7 +395,6 @@ while True:
     try:
         n9=int(input(f"where do you want to place your choice {a} : "))     
         if n9 in l1:
-            player1(n9,a)
             break
         else:
             print(f"Enter {z9} only")
@@ -307,5 +402,13 @@ while True:
         print("Invalid Input")  
 
 p=p.replace(str(n9),f"{z}")        
+
+list1.append(n9)
+
+f9=player1(list1,a)
+
+if f9==True:
+    print(f"Congratulations !!\n{a} won the game")  
+    exit()
 
 print(p)               
