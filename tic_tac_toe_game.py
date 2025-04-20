@@ -411,4 +411,6 @@ if f9==True:
     print(f"Congratulations !!\n{a} won the game")  
     exit()
 
-print(p)               
+print(p)  
+
+print("Game Over\n It's a Tie!!\nThank you for playing")
