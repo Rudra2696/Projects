@@ -1,4 +1,4 @@
-def player1(d):
+def player1(d,a):
     list1=d
     w1=[1,2,3]
     w2=[4,5,6]
@@ -9,23 +9,31 @@ def player1(d):
     w7=[1,5,9]
     w8=[3,5,7]    
     if all(num in list1 for num in w1):
-        return True
+        print(f"Congratulations !!\n{a} won the game")  
+        exit()
     elif all(num in list1 for num in w2):
-        return True
+        print(f"Congratulations !!\n{a} won the game")  
+        exit()  
     elif all(num in list1 for num in w3):
-        return True
+        print(f"Congratulations !!\n{a} won the game")  
+        exit()
     elif all(num in list1 for num in w4):
-        return True
+        print(f"Congratulations !!\n{a} won the game")  
+        exit()
     elif all(num in list1 for num in w5):
-        return True
+        print(f"Congratulations !!\n{a} won the game")  
+        exit()
     elif all(num in list1 for num in w6):
-        return True
+        print(f"Congratulations !!\n{a} won the game")  
+        exit()
     elif all(num in list1 for num in w7):
-        return True
+        print(f"Congratulations !!\n{a} won the game")  
+        exit()
     elif all(num in list1 for num in w8):
-        return True
+        print(f"Congratulations !!\n{a} won the game")  
+        exit()
       
-def player2(d):
+def player2(d,b):
     list2=d
     w1=[1,2,3]
     w2=[4,5,6]
@@ -36,21 +44,29 @@ def player2(d):
     w7=[1,5,9]
     w8=[3,5,7]    
     if all(num in list2 for num in w1):
-        return True
+        print(f"Congratulations !!\n{b} won the game")  
+        exit()
     elif all(num in list2 for num in w2):
-        return True
+        print(f"Congratulations !!\n{b} won the game")  
+        exit()
     elif all(num in list2 for num in w3):
-        return True
+        print(f"Congratulations !!\n{b} won the game")  
+        exit()
     elif all(num in list2 for num in w4):
-        return True
+        print(f"Congratulations !!\n{b} won the game")  
+        exit()
     elif all(num in list2 for num in w5):
-        return True
+        print(f"Congratulations !!\n{b} won the game")  
+        exit()
     elif all(num in list2 for num in w6):
-        return True
+        print(f"Congratulations !!\n{b} won the game")  
+        exit()
     elif all(num in list2 for num in w7):
-        return True
+        print(f"Congratulations !!\n{b} won the game")  
+        exit()
     elif all(num in list2 for num in w8):
-        return True    
+        print(f"Congratulations !!\n{b} won the game")  
+        exit()    
 
 print("Welcome to tic tac toe game")
 
@@ -134,14 +150,9 @@ p=p.replace(str(n1),f"{z}")
 
 list1.append(n1)
 
-f1=player1(list1)
-
 print(p)
 
-if f1==True:
-    print(f"Congratulations !!\n{a} won the game")  
-    exit()
-
+player1(list1,a)
 
 if n1==9:
    l.remove(f"{n1}")
@@ -169,14 +180,10 @@ while True:
 p=p.replace(str(n2),f"{y}")        
 
 list2.append(n2)
-f2=player2(list2)
 
 print(p)
 
-if f2==True:
-    print(f"Congratulations !!\n{b} won the game")  
-    exit()
-
+player2(list2,b)
 
 if n2==9:
    l.remove(f"{n2}")
@@ -204,14 +211,9 @@ p=p.replace(str(n3),f"{z}")
 
 list1.append(n3)
 
-f3=player1(list1)
-
 print(p)
 
-if f3==True:
-    print(f"Congratulations !!\n{a} won the game")  
-    exit()
-
+player1(list1,a)
 
 if n3==9:
    l.remove(f"{n3}")
@@ -238,14 +240,10 @@ while True:
 p=p.replace(str(n4),f"{y}")        
 
 list2.append(n4)
-f4=player2(list2)
 
 print(p)
 
-if f4==True:
-    print(f"Congratulations !!\n{b} won the game")  
-    exit()
-
+player2(list2,b)
 
 if n4==9:
    l.remove(f"{n4}")
@@ -274,14 +272,9 @@ p=p.replace(str(n5),f"{z}")
 
 list1.append(n5)
 
-f5=player1(list1)
-
 print(p)
 
-if f5==True:
-    print(f"Congratulations !!\n{a} won the game")  
-    exit()
-
+player1(list1,a)
 
 if n5==9:
    l.remove(f"{n5}")
@@ -308,14 +301,10 @@ while True:
 p=p.replace(str(n6),f"{y}")        
 
 list2.append(n6)
-f6=player2(list2)
 
 print(p)
 
-if f6==True:
-    print(f"Congratulations !!\n{b} won the game")  
-    exit()
-
+player2(list2,b)
 
 if n6==9:
    l.remove(f"{n6}")
@@ -344,14 +333,9 @@ p=p.replace(str(n7),f"{z}")
 
 list1.append(n7)
 
-f7=player1(list1)
-
 print(p)
 
-if f7==True:
-    print(f"Congratulations !!\n{a} won the game")  
-    exit()
-    
+player1(list1,a)   
 
 if n7==9:
    l.remove(f"{n7}")
@@ -378,14 +362,10 @@ while True:
 p=p.replace(str(n8),f"{y}")        
 
 list2.append(n8)
-f8=player2(list2)
 
 print(p)
 
-if f8==True:
-    print(f"Congratulations !!\n{b} won the game")  
-    exit()
-
+player2(list2,b)
 
 if n8==9:
    l.remove(f"{n8}")
@@ -405,14 +385,9 @@ p=p.replace(str(n9),f"{z}")
 
 list1.append(n9)
 
-f9=player1(list1)
-
 print(p)
 
-if f9==True:
-    print(f"Congratulations !!\n{a} won the game")  
-    exit()
-
+player1(list1,a)
 
 print("It's a Tie!!")
 
