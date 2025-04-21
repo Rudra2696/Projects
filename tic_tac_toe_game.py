@@ -9,28 +9,28 @@ def player1(d,a):
     w7=[1,5,9]
     w8=[3,5,7]    
     if all(num in list1 for num in w1):
-        print(f"Congratulations !!\n{a} won the game")  
+        print(f"Congratulations !! {a}\nYou won the game")  
         exit()
     elif all(num in list1 for num in w2):
-        print(f"Congratulations !!\n{a} won the game")  
+        print(f"Congratulations !! {a}\nYou won the game")  
         exit()  
     elif all(num in list1 for num in w3):
-        print(f"Congratulations !!\n{a} won the game")  
+        print(f"Congratulations !! {a}\nYou won the game")  
         exit()
     elif all(num in list1 for num in w4):
-        print(f"Congratulations !!\n{a} won the game")  
+        print(f"Congratulations !! {a}\nYou won the game")  
         exit()
     elif all(num in list1 for num in w5):
-        print(f"Congratulations !!\n{a} won the game")  
+        print(f"Congratulations !! {a}\nYou won the game")  
         exit()
     elif all(num in list1 for num in w6):
-        print(f"Congratulations !!\n{a} won the game")  
+        print(f"Congratulations !! {a}\nYou won the game")  
         exit()
     elif all(num in list1 for num in w7):
-        print(f"Congratulations !!\n{a} won the game")  
+        print(f"Congratulations !! {a}\nYou won the game")  
         exit()
     elif all(num in list1 for num in w8):
-        print(f"Congratulations !!\n{a} won the game")  
+        print(f"Congratulations !! {a}\nYou won the game")  
         exit()
       
 def player2(d,b):
@@ -44,28 +44,28 @@ def player2(d,b):
     w7=[1,5,9]
     w8=[3,5,7]    
     if all(num in list2 for num in w1):
-        print(f"Congratulations !!\n{b} won the game")  
+        print(f"Congratulations !! {b}\nYou won the game")  
         exit()
     elif all(num in list2 for num in w2):
-        print(f"Congratulations !!\n{b} won the game")  
+        print(f"Congratulations !! {b}\nYou won the game")  
         exit()
     elif all(num in list2 for num in w3):
-        print(f"Congratulations !!\n{b} won the game")  
+        print(f"Congratulations !! {b}\nYou won the game")  
         exit()
     elif all(num in list2 for num in w4):
-        print(f"Congratulations !!\n{b} won the game")  
+        print(f"Congratulations !! {b}\nYou won the game")  
         exit()
     elif all(num in list2 for num in w5):
-        print(f"Congratulations !!\n{b} won the game")  
+        print(f"Congratulations !! {b}\nYou won the game")  
         exit()
     elif all(num in list2 for num in w6):
-        print(f"Congratulations !!\n{b} won the game")  
+        print(f"Congratulations !! {b}\nYou won the game")  
         exit()
     elif all(num in list2 for num in w7):
-        print(f"Congratulations !!\n{b} won the game")  
+        print(f"Congratulations !! {b}\nYou won the game")  
         exit()
     elif all(num in list2 for num in w8):
-        print(f"Congratulations !!\n{b} won the game")  
+        print(f"Congratulations !! {b}\nYou won the game")  
         exit()    
 
 print("Welcome to tic tac toe game")
