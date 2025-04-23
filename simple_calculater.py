@@ -30,4 +30,4 @@ while True:
             print(num1, "/", num2, "=", div(num1, num2))
         break
     else:
-        print("Invalid Input")
+        print("Please choose 1/2/3/4 only") 
