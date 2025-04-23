@@ -20,6 +20,7 @@ while True:
     print("2.Subtract")
     print("3.Multiply")
     print("4.Divide")
+    print("5.Remander")
     choice = input("Enter choice(1/2/3/4/5): ")
     if choice in ('1', '2', '3', '4', '5'):
         num1 = float(input("Enter first number: "))
